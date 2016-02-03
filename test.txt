@@ -1,0 +1,90 @@
+Package: skype
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 4.3.0.37-0ubuntu0.12.04.1
+Depends: skype-bin
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: adobe-flashplugin
+Priority: optional
+Section: web
+Installed-Size: 36123
+Maintainer: DL-Flash Player Ubuntu <FlashPlayerUbuntu@adobe.com>
+Architecture: amd64
+Version: 1:20151110.1-0trusty1
+Recommends: adobe-flash-properties-gtk (= 1:20151110.1-0trusty1) | adobe-flash-properties-kde (= 1:20151110.1-0trusty1)
+Replaces: flashplugin (<< 6)
+Suggests: firefox | chromium-browser, x-ttcidfont-conf, msttcorefonts, ttf-bitstream-vera | ttf-dejavu, ttf-xfree86-nonfree, xfs (>= 1:1.0.1-5), libnspr4-0d, libnss3-1d
+Provides: flashplugin-nonfree
+Depends: wget, fontconfig, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.11), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.24.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.13.4-2~) | libnss3-1d (>= 3.12.0~beta3), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libstdc++6 (>= 4.3), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxrender1, libxt6
+Conflicts: flashplayer-mozilla, flashplugin (<< 6), flashplugin-downloader, flashplugin-installer, xfs (<< 1:1.0.1-5)
+Filename: pool/partner/a/adobe-flashplugin/adobe-flashplugin_20151110.1-0trusty1_amd64.deb
+Size: 10099986
+MD5sum: e7ae062e9637c28c4818163ab0cac698
+SHA1: 22c3fcd41be1c2600de57e336cbb65851ecc47c5
+SHA256: 2877d9250eb9a65b0899b2d19031223a45fd8581d9618a5df8ced51150f539dc
+Description: Adobe Flash Player plugin
+Description-md5: 4414ca68dbd37fdc3008c70a8a107946
+Npp-File: libflashplayer.so
+Npp-Mimetype: application/x-shockwave-flash
+Npp-Applications: ec8030f7-c20a-464f-9b0e-13a3a9e97384, 92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a, aa5ca914-c309-495d-91cf-3141bbb04115
+Npp-Description: Adobe Flash Plugin (http://www.adobe.com)
+Npp-Name: Adobe Flash Plugin
+
+Package: skype-bin
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 4.3.0.37-0ubuntu0.12.04.1
+Depends: skype-extra, skype-extra2
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: skype-extra
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 4.3.0.37-0ubuntu0.12.04.1
+Depends:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: skype-extra2
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 4.3.0.37-0ubuntu0.12.04.1
+Depends:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
