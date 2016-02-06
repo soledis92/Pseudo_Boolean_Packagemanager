@@ -1,4 +1,0 @@
-/* objective function comes first: */
-min: 1*glass1 + 1*window2 + 1*window1 + 1*window0 + 1*door2 + 1*door1 + 1*glass2 + 1*tyre2 + 1*tyre1 + 1*wheel3 + 1*wheel2 + 1*turbo1 + 1*engine2 + 1*engine1 + 1*car2 + 1*root;
-/* constraints: */
-car2 >= 1;

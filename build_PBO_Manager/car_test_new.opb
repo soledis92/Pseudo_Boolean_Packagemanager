@@ -1,7 +1,0 @@
-/* objective function comes first: */
-min: 0*'skype-bin4.3.0.37-0ubuntu0.12.04.1' + 0*skype-extra24.3.0.37-0ubuntu0.12.04.1 + 0*skype-extra4.3.0.37-0ubuntu0.12.04.1 + 0*skype4.3.0.37-0ubuntu0.12.04.1;
-/* constraints: */
-skype-extra4.3.0.37-0ubuntu0.12.04.1 - skype-bin4.3.0.37-0ubuntu0.12.04.1 >= 0;
-skype-extra24.3.0.37-0ubuntu0.12.04.1 - skype-bin4.3.0.37-0ubuntu0.12.04.1 >= 0;
-skype-bin4.3.0.37-0ubuntu0.12.04.1 - skype4.3.0.37-0ubuntu0.12.04.1 >= 0;
-skype4.3.0.37-0ubuntu0.12.04.1 >= 1;
