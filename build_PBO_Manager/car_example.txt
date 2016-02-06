@@ -1,0 +1,243 @@
+Package: car
+Priority: extra
+Section: net
+Installed-Size: 65
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 2
+Depends: door, wheel, engine
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: engine
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 1:ubuntu123-release1
+Depends: turbo
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: engine
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 1:ubuntu123-release2
+Depends:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: turbo
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 1
+Depends:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: wheel
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 2
+Depends:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: wheel
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 3
+Depends: tyre
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: tyre
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 1
+Depends:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: tyre
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 2
+Depends:
+Conflicts: glass (= 2)
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: door
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 1
+Depends:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: door
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 2
+Depends: window
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: window
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 0
+Depends:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: window
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 1
+Depends: glass (= 1)
+Conflicts:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: window
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 2
+Depends: glass (= 2)
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: glass
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 1
+Depends:
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: glass
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 2
+Depends:
+Conflicts: tyre (= 2)
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+

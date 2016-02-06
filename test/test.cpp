@@ -6,9 +6,10 @@ TEST(mocktest, mocking)
   EXPECT_EQ(1, 1);
 }
 
-TEST(add,positive)
+TEST(add, positive)
 {
     Addieren addClassIntance = Addieren();
-    EXPECT_EQ(5, addClassIntance.add(3,2));
+    int a = addClassIntance.add(3,2);
+    EXPECT_EQ(5, a);
 }
 
