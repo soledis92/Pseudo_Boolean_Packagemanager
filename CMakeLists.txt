@@ -9,10 +9,6 @@ if(CMAKE_COMPILER_IS_GNUCXX)
     add_definitions(-Wall -ansi -Wno-deprecated -pthread)
 endif()
 
-if(MSVC)
-    #vc 2012 fix for vararg templates
-    set(MSVC_COMPILER_DEFS "-D_VARIADIC_MAX=10")
-endif() 
 #-------------------
 # set common include folder for module
 #-------------------
@@ -23,12 +19,13 @@ set(EXT_PROJECTS_DIR ${PROJECT_SOURCE_DIR}/ext)
 # Module source
 #-------------------
 #set(PROJECT_LIB_NAME ${PROJECT_NAME_STR}_impl)
-
-#include_directories(${COMMON_INCLUDES})
-#file(GLOB SRC_FILES ${PROJECT_SOURCE_DIR}/src/*.cpp)
-#add_library(${PROJECT_LIB_NAME} ${SRC_FILES})
+include_directories(${COMMON_INCLUDES})
+file(GLOB INCLUDE_FILES ${COMMON_INCLUDES}/*.h)
+file(GLOB SRC_FILES ${PROJECT_SOURCE_DIR}/src/*.cpp)
+add_executable(pbp ${SRC_FILES} ${INCLUDE_FILES})
 
 add_subdirectory(${EXT_PROJECTS_DIR}/gtest)
+
 
 #-------------------
 # Test
@@ -43,21 +40,10 @@ add_executable(${PROJECT_TEST_NAME} ${TEST_SRC_FILES})
 add_dependencies(${PROJECT_TEST_NAME} googletest)
 
 
-if(NOT WIN32)
-    target_link_libraries(${PROJECT_TEST_NAME}
-        ${GTEST_LIBS_DIR}/libgtest.a
-        ${GTEST_LIBS_DIR}/libgtest_main.a
-        )
-else()
-    target_link_libraries(${PROJECT_TEST_NAME}
-        debug ${GTEST_LIBS_DIR}/DebugLibs/${CMAKE_FIND_LIBRARY_PREFIXES}gtest${CMAKE_FIND_LIBRARY_SUFFIXES}
-        optimized ${GTEST_LIBS_DIR}/ReleaseLibs/${CMAKE_FIND_LIBRARY_PREFIXES}gtest${CMAKE_FIND_LIBRARY_SUFFIXES}
-        )
-    target_link_libraries(${PROJECT_TEST_NAME}
-        debug ${GTEST_LIBS_DIR}/DebugLibs/${CMAKE_FIND_LIBRARY_PREFIXES}gtest_main${CMAKE_FIND_LIBRARY_SUFFIXES}
-        optimized ${GTEST_LIBS_DIR}/ReleaseLibs/${CMAKE_FIND_LIBRARY_PREFIXES}gtest_main${CMAKE_FIND_LIBRARY_SUFFIXES}
-        )
-endif()
+target_link_libraries(${PROJECT_TEST_NAME}
+    ${GTEST_LIBS_DIR}/libgtest.a
+    ${GTEST_LIBS_DIR}/libgtest_main.a
+    )
 
 target_link_libraries(${PROJECT_TEST_NAME} ${CMAKE_THREAD_LIBS_INIT})
 
