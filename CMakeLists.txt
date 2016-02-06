@@ -1,6 +1,6 @@
 project(FileToGraph2_v2)
 cmake_minimum_required(VERSION 2.8.8)
-set(PROJECT_NAME_STR google-test-examples)
+set(PROJECT_NAME_STR filetToGraph)
 project(${PROJECT_NAME_STR} C CXX)
 
 find_package(Threads REQUIRED)
@@ -36,7 +36,7 @@ set(PROJECT_TEST_NAME ${PROJECT_NAME_STR}_test)
 include_directories(${GTEST_INCLUDE_DIRS} ${COMMON_INCLUDES})
 
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
-add_executable(${PROJECT_TEST_NAME} ${TEST_SRC_FILES})
+add_executable(${PROJECT_TEST_NAME} ${TEST_SRC_FILES} ${SRC_FILES} ${INCLUDE_FILES})
 add_dependencies(${PROJECT_TEST_NAME} googletest)
 
 
@@ -47,4 +47,3 @@ target_link_libraries(${PROJECT_TEST_NAME}
 
 target_link_libraries(${PROJECT_TEST_NAME} ${CMAKE_THREAD_LIBS_INIT})
 
-add_test(test1 ${PROJECT_TEST_NAME})
