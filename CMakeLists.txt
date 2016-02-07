@@ -30,7 +30,6 @@ add_subdirectory(${EXT_PROJECTS_DIR}/gtest)
 #-------------------
 # Test
 #-------------------
-add_definitions(${MSVC_COMPILER_DEFS})
 enable_testing()
 set(PROJECT_TEST_NAME ${PROJECT_NAME_STR}_test)
 include_directories(${GTEST_INCLUDE_DIRS} ${COMMON_INCLUDES})

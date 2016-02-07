@@ -451,7 +451,7 @@ int Dependencygraph::searchForPkg(
     bool pkgfound = false;
     std::vector<std::string> constraintEval;
     evaluateConstraintAddOn(pkgVersionConstraint,constraintEval);
-    PkgVersion* compareVersion = new PkgVersion(constraintEval[1]);
+    PkgVersion compareVersion = PkgVersion(constraintEval[1]);
 
     int lineNumber=skipLines;
 
@@ -460,25 +460,25 @@ int Dependencygraph::searchForPkg(
             if(data.substr(9) == pkgName){
                 while(std::getline(inputfile,data)){
                     if(data.substr(0,8) == "Version:"){
-                        PkgVersion* tempVersion = new PkgVersion(data.substr(9));
+                        PkgVersion tempVersion = PkgVersion(data.substr(9));
                         if(constraintEval[0] == "="){
-                            if(*tempVersion == *compareVersion){pkgfound = true; goto end;}
+                            if(tempVersion == compareVersion){pkgfound = true; goto end;}
                             else{goto outerWhileLoop;}
                         }
                         if(constraintEval[0] == "<"){
-                            if(*tempVersion < *compareVersion){pkgfound = true; goto end;}
+                            if(tempVersion < compareVersion){pkgfound = true; goto end;}
                             else{goto outerWhileLoop;}
                         }
                         if(constraintEval[0] == "<="){
-                            if(*tempVersion <= *compareVersion){pkgfound = true; goto end;}
+                            if(tempVersion <= compareVersion){pkgfound = true; goto end;}
                             else{goto outerWhileLoop;}
                         }
                         if(constraintEval[0] == ">"){
-                            if(*tempVersion > *compareVersion){pkgfound = true; goto end;}
+                            if(tempVersion > compareVersion){pkgfound = true; goto end;}
                             else{goto outerWhileLoop;}
                         }
                         if(constraintEval[0] == ">="){
-                            if(*tempVersion >= *compareVersion){pkgfound = true; goto end;}
+                            if(tempVersion >= compareVersion){pkgfound = true; goto end;}
                             else{goto outerWhileLoop;}
                         }
                         else{goto outerWhileLoop;}
@@ -583,6 +583,10 @@ void Dependencygraph::addNewNodeAndFillMetadata(std::string pkgName,
                                                 std::vector<int>& idOfNewPkgs){
     int lengthOfFile = getNumberOfLinesOfSourceFile();
     std::vector<int> tempLine;
+    //handle <pkgname>:any, by simply deleting :any
+    if(pkgName.find(":any") != std::string::npos){
+        pkgName.erase(pkgName.find(":any"),4);
+    }
 
     if(versionConstraint == ""){
         do{
@@ -615,25 +619,25 @@ void Dependencygraph::addNewNodeAndFillMetadata(std::string pkgName,
     for(std::vector<int>::iterator it = tempLine.begin();
                                    it != tempLine.end();
                                    it++){
-        lemon::ListDigraph::Node* tempPkg = new lemon::ListDigraph::Node();
-        *tempPkg = this->graph.addNode();
+        lemon::ListDigraph::Node tempPkg;
+        tempPkg = this->graph.addNode();
 
         if((*it >= 0) && (*it < lengthOfFile)){
-            jumpBufferMetadata(*tempPkg,*it);
+            jumpBufferMetadata(tempPkg,*it);
             // Paket existiert schon
-            if((this->nameidMap.find(this->name[*tempPkg]
-             + (this->version[*tempPkg]).wholeVersion()))
+            if((this->nameidMap.find(this->name[tempPkg]
+             + (this->version[tempPkg]).wholeVersion()))
              != this->nameidMap.end()){
-                this->graph.erase(*tempPkg);
+                this->graph.erase(tempPkg);
             }
-            else if(this->nameidMap.find((this->name[*tempPkg]
-                  + this->version[*tempPkg].wholeVersion()))
+            else if(this->nameidMap.find((this->name[tempPkg]
+                  + this->version[tempPkg].wholeVersion()))
                   == this->nameidMap.end()){
                 pkgFound = true;
-                this->nameidMap[(this->name[*tempPkg]
-                              + (this->version[*tempPkg]).wholeVersion())]
-                              = lemon::ListDigraph::id(*tempPkg);
-                idOfNewPkgs.push_back(lemon::ListDigraph::id(*tempPkg));
+                this->nameidMap[(this->name[tempPkg]
+                              + (this->version[tempPkg]).wholeVersion())]
+                              = lemon::ListDigraph::id(tempPkg);
+                idOfNewPkgs.push_back(lemon::ListDigraph::id(tempPkg));
             }
         }
 
@@ -641,7 +645,8 @@ void Dependencygraph::addNewNodeAndFillMetadata(std::string pkgName,
             pkgFound = false;
             std::cout << "abhängiges Paket: "<< pkgName
                       << " nicht gefunden!" << std::endl;
-            this->graph.erase(*tempPkg);
+            std::cout << "Versionsbed.: " << versionConstraint << std::endl;
+            this->graph.erase(tempPkg);
             if(idOfNewPkgs.empty()){
                 idOfNewPkgs.push_back(-1);
             }

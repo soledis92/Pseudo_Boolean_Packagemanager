@@ -3,7 +3,7 @@
 
 TEST(mocktest, mocking)
 {
-  EXPECT_EQ(1, 1);
+  EXPECT_EQ(1, 2);
 }
 
 TEST(add, positive)
