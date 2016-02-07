@@ -645,7 +645,6 @@ void Dependencygraph::addNewNodeAndFillMetadata(std::string pkgName,
             pkgFound = false;
             std::cout << "abhängiges Paket: "<< pkgName
                       << " nicht gefunden!" << std::endl;
-            std::cout << "Versionsbed.: " << versionConstraint << std::endl;
             this->graph.erase(tempPkg);
             if(idOfNewPkgs.empty()){
                 idOfNewPkgs.push_back(-1);

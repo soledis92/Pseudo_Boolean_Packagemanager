@@ -28,7 +28,7 @@ void PkgVersion::splitContent(){
         startOfUpstream = endOfEpoch + 1;
     }
     std::string::size_type endOfUpstream =
-    this->wholeVersionString.find_first_of('-',startOfUpstream) - 2;
+    this->wholeVersionString.find_last_of('-',startOfUpstream) - 2;
     if(endOfUpstream == std::string::npos){
         this->upStreamval = this->wholeVersionString.substr(startOfUpstream);
         this->revisionval = "0";
@@ -179,6 +179,17 @@ int PkgVersion::CompareComponent(const char *a, const char *b){
         return (*b_it) == '~' ? 1 : -1;
     }
 }*/
+
+
+std::string PkgVersion::wholeVersionAsVariable() const {
+    std::stringstream s;
+    s << this->epochval
+      << "_"
+      << this->upStreamval
+      << "__"
+      << this->revisionval;
+    return s.str();
+}
 
 
 std::ostream& operator <<(std::ostream& os , const PkgVersion& version){
